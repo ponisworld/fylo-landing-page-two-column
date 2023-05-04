@@ -12,7 +12,7 @@ The designs were created to the following widths:
 ### Primary
 
 - Very Dark Blue: hsl(243, 87%, 12%)
-- Desaturated Blue: hsl(238, 22%, 44%)
+- Unsaturated Blue: hsl(238, 22%, 44%)
 
 ### Accent
 

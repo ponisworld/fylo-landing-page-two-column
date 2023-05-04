@@ -13,12 +13,17 @@
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    color: var(--very-dark-blue);
+    font-size: 1rem;
 }
 h1,
 h2,
 h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
+}
+p {
+    max-width: 45ch;
 }
 a {
     text-decoration: none;
@@ -27,16 +32,91 @@ a {
 li {
     list-style-type: none;
 }
+img {
+    max-width: 100%;
+}
 /* SPECIFIC */
 body {
 
     header {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 3rem 5rem;
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+        align-items: center;
 
+        ul {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+
+            li {
+                a {
+                    &:hover {
+                        font-weight: 700;
+                    }
+                }
+                
+            }
+        }
     }
 
     main {
         #main-section {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 2rem;
+            padding: 1rem 5rem;
+            max-width: 1400px;
+            margin: 0 auto;
 
+            img {
+                max-width: 700px;
+            }
+
+            .main-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 1.75rem;
+
+                h1 {
+                    font-size: 2.5rem;
+                    line-height: 1.5;
+                }
+                p {
+                    letter-spacing: 0.02rem;
+                    line-height: 1.5;
+                }
+                form {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+
+                    input {
+                        border: 1px solid var(--very-dark-blue);
+                        padding: 0.7rem 8rem 0.7rem 1rem;
+                        font-size: 0.8rem;
+                        border-radius: 3px;
+
+                        &::placeholder {
+                            color: var(--light-gray);
+                        }
+                    }
+                    button {
+                        padding: 0.7rem 3rem;
+                        background-color: var(--bright-blue);
+                        color: var(--light-grayish-blue);
+                        border: none;
+                        border-radius: 2px;
+                        font-size: 0.8rem;
+                        font-weight: 700;
+                    }
+                }
+            }
+            
         }
         #secondary-section {
 

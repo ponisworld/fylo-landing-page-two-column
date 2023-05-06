@@ -60,11 +60,20 @@ body header ul {
 body header ul li a:hover {
   font-weight: 700;
 }
+body main p {
+  letter-spacing: 0.02rem;
+  line-height: 1.5;
+}
+body main h1,
+body main h2,
+body main h3 {
+  line-height: 1.5;
+}
 body main #main-section {
   display: flex;
   flex-direction: row-reverse;
   gap: 2rem;
-  padding: 1rem 5rem;
+  padding: 2rem 5rem 5rem 5rem;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -79,11 +88,6 @@ body main #main-section .main-text {
 }
 body main #main-section .main-text h1 {
   font-size: 2.5rem;
-  line-height: 1.5;
-}
-body main #main-section .main-text p {
-  letter-spacing: 0.02rem;
-  line-height: 1.5;
 }
 body main #main-section .main-text form {
   display: flex;
@@ -107,6 +111,90 @@ body main #main-section .main-text form button {
   border-radius: 2px;
   font-size: 0.8rem;
   font-weight: 700;
+  cursor: pointer;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+body main .divisor {
+  margin-top: 2rem;
+  width: 100%;
+  height: fit-content;
+}
+body main .divisor picture,
+body main .divisor img,
+body main .divisor source {
+  display: block;
+  width: 100%;
+}
+body main #secondary-section {
+  background-color: var(--light-grayish-blue);
+  padding: 2rem 5rem 5rem 5rem;
+}
+body main #secondary-section .secondary-section-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+body main #secondary-section .secondary-section-wrapper > img {
+  max-width: 600px;
+}
+body main #secondary-section .secondary-section-wrapper > .main-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+body main #secondary-section .secondary-section-wrapper > .main-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+body main #secondary-section .secondary-section-wrapper > .main-text a {
+  margin-top: 0.2rem;
+  color: var(--moderate-cyan);
+  border-bottom: 1px solid var(--moderate-cyan);
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 0.4rem;
+  padding-bottom: 0.2rem;
+}
+body main #secondary-section .secondary-section-wrapper > .main-text a:hover {
+  opacity: 0.65;
+}
+body main #secondary-section .secondary-section-wrapper > .main-text .testimonial {
+  background-color: #fff;
+  width: fit-content;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  max-width: 400px;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+body main #secondary-section .secondary-section-wrapper > .main-text .testimonial > img {
+  width: 16px;
+}
+body main #secondary-section .secondary-section-wrapper > .main-text .testimonial > p {
+  line-height: 2;
+}
+body main #secondary-section .secondary-section-wrapper > .main-text .testimonial .author {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+body main #secondary-section .secondary-section-wrapper > .main-text .testimonial .author img {
+  width: 40px;
+  border-radius: 50%;
+}
+body main #secondary-section .secondary-section-wrapper > .main-text .testimonial .author .main-text strong {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+body main #secondary-section .secondary-section-wrapper > .main-text .testimonial .author .main-text .small {
+  font-size: 0.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -69,13 +69,41 @@ body main h2,
 body main h3 {
   line-height: 1.5;
 }
+body main form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+body main form input {
+  border: 1px solid var(--very-dark-blue);
+  padding: 0.7rem 8rem 0.7rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 3px;
+}
+body main form input::placeholder {
+  color: var(--light-gray);
+}
+body main form button {
+  padding: 0.7rem 3rem;
+  background-color: var(--bright-blue);
+  color: var(--light-grayish-blue);
+  border: none;
+  border-radius: 2px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+body main form button:hover {
+  opacity: 0.75;
+}
 body main #main-section {
   display: flex;
   flex-direction: row-reverse;
   gap: 2rem;
   padding: 2rem 5rem 5rem 5rem;
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 2rem auto 4rem auto;
 }
 body main #main-section img {
   max-width: 700px;
@@ -88,31 +116,6 @@ body main #main-section .main-text {
 }
 body main #main-section .main-text h1 {
   font-size: 2.5rem;
-}
-body main #main-section .main-text form {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-body main #main-section .main-text form input {
-  border: 1px solid var(--very-dark-blue);
-  padding: 0.7rem 8rem 0.7rem 1rem;
-  font-size: 0.8rem;
-  border-radius: 3px;
-}
-body main #main-section .main-text form input::placeholder {
-  color: var(--light-gray);
-}
-body main #main-section .main-text form button {
-  padding: 0.7rem 3rem;
-  background-color: var(--bright-blue);
-  color: var(--light-grayish-blue);
-  border: none;
-  border-radius: 2px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  cursor: pointer;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 body main .divisor {
   margin-top: 2rem;
@@ -195,6 +198,56 @@ body main #secondary-section .secondary-section-wrapper > .main-text .testimonia
 }
 body main #secondary-section .secondary-section-wrapper > .main-text .testimonial .author .main-text .small {
   font-size: 0.6rem;
+}
+body main #early-access {
+  background-color: var(--unsaturated-blue);
+  padding: 2rem 1rem 0 1rem;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+}
+body main #early-access .early-wrapper {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+body main #early-access .early-wrapper .main-text {
+  flex: 1;
+}
+body main #early-access .early-wrapper .main-text p {
+  max-width: 55ch;
+}
+body main #early-access .early-wrapper .main-text p,
+body main #early-access .early-wrapper .main-text h3 {
+  color: var(--light-grayish-blue);
+}
+body main #early-access .early-wrapper .main-text h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+body main #early-access .early-wrapper form {
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  flex: 1;
+  max-width: 480px;
+}
+body main #early-access .early-wrapper form input {
+  border: none;
+  padding: 1rem 15rem 1rem 2rem;
+}
+body main #early-access .early-wrapper form button {
+  align-self: flex-start;
+}
+body footer {
+  background-color: var(--very-dark-blue);
+}
+body footer p,
+body footer a,
+body footer li {
+  color: var(--light-grayish-blue);
 }
 
 /*# sourceMappingURL=style.css.map */

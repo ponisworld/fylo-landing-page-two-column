@@ -75,13 +75,46 @@ body {
         h3 {
             line-height: 1.5;
         }
+
+        form {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            input {
+                border: 1px solid var(--very-dark-blue);
+                padding: 0.7rem 8rem 0.7rem 1rem;
+                font-size: 0.8rem;
+                border-radius: 3px;
+
+                &::placeholder {
+                    color: var(--light-gray);
+                }
+            }
+            button {
+                padding: 0.7rem 3rem;
+                background-color: var(--bright-blue);
+                color: var(--light-grayish-blue);
+                border: none;
+                border-radius: 2px;
+                font-size: 0.8rem;
+                font-weight: 700;
+                cursor: pointer;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+                &:hover {
+                    opacity: 0.75;
+                }
+            }
+        }
+
         #main-section {
             display: flex;
             flex-direction: row-reverse;
             gap: 2rem;
             padding: 2rem 5rem 5rem 5rem;
             max-width: 1400px;
-            margin: 0 auto;
+            margin: 2rem auto 4rem auto;
 
             img {
                 max-width: 700px;
@@ -94,34 +127,6 @@ body {
 
                 h1 {
                     font-size: 2.5rem;
-                }
-                
-                form {
-                    display: flex;
-                    align-items: center;
-                    gap: 1rem;
-
-                    input {
-                        border: 1px solid var(--very-dark-blue);
-                        padding: 0.7rem 8rem 0.7rem 1rem;
-                        font-size: 0.8rem;
-                        border-radius: 3px;
-
-                        &::placeholder {
-                            color: var(--light-gray);
-                        }
-                    }
-                    button {
-                        padding: 0.7rem 3rem;
-                        background-color: var(--bright-blue);
-                        color: var(--light-grayish-blue);
-                        border: none;
-                        border-radius: 2px;
-                        font-size: 0.8rem;
-                        font-weight: 700;
-                        cursor: pointer;
-                        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-                    }
                 }
             }
             
@@ -226,11 +231,67 @@ body {
             }
         }
         #early-access {
+            background-color: var(--unsaturated-blue);
+            padding: 2rem 1rem 0 1rem;
+            min-height: 320px;
+            display: flex;
+            align-items: center;
+
+            .early-wrapper {
+                max-width: 1400px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin: 0 auto;
+
+                .main-text {
+                    flex: 1;
+
+                    p {
+                        max-width: 55ch;
+                    }
+
+                    p,
+                    h3 {
+                        color: var(--light-grayish-blue);
+                    }
+
+                    h3 {
+                        font-size: 2rem;
+                        margin-bottom: 1rem;
+                    }
+                }
+
+                form {
+                    flex-direction: column;
+                    align-items: stretch;
+                    justify-content: center;
+                    flex: 1;
+                    max-width: 480px;
+
+                    input {
+                        border: none;
+                        padding: 1rem 15rem 1rem 2rem;
+                    }
+
+                    button {
+                        align-self: flex-start;
+                    }
+                }
+            }
 
         }
     }
 
     footer {
+        background-color: var(--very-dark-blue);
+        
+        p,
+        a,
+        li {
+            color: var(--light-grayish-blue);
+        }
+
         .main-footer-wrapper {
 
             .bottom-footer-wrapper {
